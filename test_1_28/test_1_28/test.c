@@ -137,3 +137,15 @@
 //		printf("%d", num);
 //	return 0;
 //}
+//#include <stdio.h>
+//int my_strlen(int* p)
+//{
+//    int* p1 = p + 1;
+//    return p1 - p;  //Ö¸Õë - Ö¸Õë
+//}
+//int main()
+//{
+//    int a = 0;
+//    printf("%d", my_strlen(&a));
+//    return 0;
+//}

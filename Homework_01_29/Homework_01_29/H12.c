@@ -1,8 +1,8 @@
-//#define _CRT_SECURE_NO_WARNINGS 1
-//#include <stdio.h>
-//#define ROW 4
-//#define COL 5
-////寻找递增矩阵中的某个元素
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+#define ROW 4
+#define COL 5
+//寻找递增矩阵中的某个元素
 //int d = 0;
 //int search_num(int* p, int row, int col, int num)
 //{

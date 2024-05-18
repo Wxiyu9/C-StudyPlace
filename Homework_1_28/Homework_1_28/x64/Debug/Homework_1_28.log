@@ -1,3 +1,5 @@
-﻿  H13.c
+﻿  H12.c
+  H13.c
+  正在生成代码...
 D:\VS\code\traing\Homework_1_28\Homework_1_28\H13.c(22): warning C4172: 返回局部变量或临时变量的地址: adjust
   Homework_1_28.vcxproj -> D:\VS\code\traing\Homework_1_28\x64\Debug\Homework_1_28.exe

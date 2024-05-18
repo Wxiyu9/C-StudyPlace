@@ -131,6 +131,7 @@
     <ClCompile Include="H12.c" />
     <ClCompile Include="H13.c" />
     <ClCompile Include="H3.c" />
+    <ClCompile Include="test.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

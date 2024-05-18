@@ -1,3 +1,1 @@
-﻿  test.c
-D:\VS\code\traing\test_1_28\test_1_28\test.c(145,7): warning C4090: “初始化”: 不同的“const”限定符
-  test_1_28.vcxproj -> D:\VS\code\traing\test_1_28\x64\Debug\test_1_28.exe
+﻿LINK : fatal error LNK1104: 无法打开文件“D:\VS\code\traing\test_1_28\x64\Debug\test_1_28.exe”
