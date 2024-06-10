@@ -1,0 +1,466 @@
+/* 清除默认样式 */
+* {
+  margin:0;
+  padding:0;
+}
+ul,ol {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+  border: none;
+}
+body {
+  background-color: white;
+}
+.test {
+  height: 300px;
+}
+html {
+  scroll-behavior:smooth;
+}
+/* 顶部导航栏 */
+.header {
+  position: fixed;
+  z-index:10;
+  top: -60px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index:999;
+  background:inherit;
+  background-color: #ecefee;
+  text-align: center;
+  color: #fff;
+  line-height: 60px;
+  font-size: 30px;
+  transition: all .3s;
+}
+/* 校徽 */
+.header .henu {
+  position: absolute;
+  left:0px;
+  top:0;
+  height: 100%;
+}
+/* 导航栏选项 */
+.header ul {
+  position: absolute;
+  right: 0px;
+  display: inline;
+}
+.header ul li {
+  width: 150px;
+  float:left;
+  height: 60px;
+  cursor:pointer;
+}
+.header ul li:hover,
+.header ul li:hover p{
+  background-color: white;
+  color: rgb(0,174,236);
+}
+.header ul li p {
+  color: black;
+  font-size: 20px;
+}
+.turn {
+  display:inline;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 25px;
+  cursor: pointer;
+}
+
+
+
+/* HOME部分 */
+.headimg {
+  width: 100%;
+  height: 800px;
+  overflow:hidden;
+  position: relative;
+}
+/* 背景视频位置调整 */
+.headimg video {
+  position: absolute;
+  top:-150px;
+}
+/* 标题样式 */
+.headimg h1 {
+  color: white;
+  font-size: 70px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-80%);
+}
+/* 副标题样式 */
+.headimg h2 {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top:40%;
+  left:50%;
+  transform:translate(-50%,300%);
+}
+#lower {
+  display:inline;
+  z-index:10;
+  position:absolute;
+  top:70%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  font-size: 70px;
+  color: white;
+  cursor:pointer;
+}
+
+
+/* KNOW部分 */
+.knowcontents {
+  width: 100%;
+  height: 900px;
+  padding-top:15px;
+  margin: 0 auto;
+  background-color:#ecefee;
+  position:relative;
+}
+/* KNOW 部分主标题 */
+.knowcontents .knowChitext {
+  font-size: 70px;
+  color:black;
+  text-align:center;
+}
+/* KNOW 部分副标题 */
+.knowcontents .knowEngtext {
+  font-size:20px;
+  text-align: center;
+  margin-left: 10px;
+  color:black;
+}
+/* KNOW - 轮播图盒子 */
+.knowcontents .climate {
+  position:absolute;
+  top:35%;
+  left:50%;
+  width:70%;
+  height: 500px;
+  overflow:hidden;
+  transform:translate(-50%,-50%);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+/* KNOW - 轮播图 */
+.knowcontents .climate img {
+  height: 70%;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  box-shadow: 1px 1px 10px 1px black;
+  border-radius: 10px;
+  transition: all .4s;
+  cursor:pointer;
+}
+.one {
+  opacity: 1;
+  z-index: 2;
+  transform:translateX(500px) translateZ(-500px);
+}
+.two {
+  opacity: 1;
+  z-index: 3;
+  transform: translateX(0) translateZ(0);
+}
+.three {
+  opacity: 1;
+  z-index: 2;
+  transform:translateX(-500px) translateZ(-500px);
+}
+.other1 {
+  opacity: 0;
+  z-index: 1;
+  transform: translateX(0) translateZ(0);
+}
+.other2 {
+  opacity: 0;
+  z-index: 1;
+  transform: translateX(0) translateZ(0);
+}
+/* 中间展示盒子 */
+.knowcontents .middle 
+{
+  position: absolute;
+  width: 1000px;
+  height: 200px;
+  top: 60%;
+  left:0%;
+  /* display:block; */
+  right:0%;
+  margin:auto;
+  transition:all .7s;
+  background-color: white;
+  /* box-shadow:1px 1px 2px 1px black; */
+  text-align:center;
+  border-radius: 10px;
+}
+.middle .introduce {
+  font-size: 14px;
+  color:black;
+  line-height: 50px;
+}
+.middle .introduce .littletitle {
+  font-size: 25px;
+}
+
+/* 中间隐藏盒子 */
+.knowcontents .hidden,
+.hidden .introduce,
+.hidden .introduce .littletitle {
+  position: absolute;
+  transition:all .7s;
+  opacity: 0;
+  top: 30%;
+  left:50%;
+  font-size:0px;
+  line-height:0;
+  height:0px;
+}
+/* 左盒子 */
+.knowcontents .leftpart,
+.leftpart .introduce,
+.leftpart .introduce .littletitle
+{
+  position: absolute;
+  transition:all 0s;
+  opacity: 0;
+  top:50%;
+  left:30%;
+  height:0px;
+  font-size:0px;
+  line-height:0;
+}
+/* 右盒子 */
+.knowcontents .rightpart ,
+.rightpart .introduce,
+.rightpart .introduce .littletitle{
+  position: absolute;
+  transition:all 0s;
+  opacity: 0;
+  top: 50%;
+  left:75%;
+  font-size:0px;
+  line-height:0;
+  height:0px;
+}
+
+
+
+/* FEEL部分 */
+.feelcontents {
+  width: 100%;
+  height: 1300px;
+  background-color:rgb(30,30,30);
+  position:relative;
+  overflow: hidden;
+}
+/* FEEL 部分主标题 */
+.feelcontents .feelChitext {
+  font-size: 70px;
+  color:white;
+  position:absolute;
+  top:3%;
+  left:2%;
+}
+/* FEEL 部分副标题 */
+.feelcontents .feelEngtext {
+  font-size:30px;
+  top: 10%;  
+  left: 3%;
+  position: absolute;
+  color:white;
+}
+/* 文字 */
+.feelcontents .data {
+  color:#ecefee;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size:20px;
+}
+.feelcontents .data p {
+  line-height: 25px;
+  text-align: right;
+}
+.feelcontents .data .datatitle {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 15px;
+  margin-right: -30px;
+}
+.short {
+  position: absolute;
+  color:#ecefee;
+  opacity: 0.8;
+  font-size:18px;
+  top:38%;
+  left:2%;
+}
+/* 图片混排 */
+
+/* 整体大盒子 */
+.pic {
+  position:absolute;
+  top:42%;
+  width: 100%;
+  height: 700px;
+}
+/* 图片盒子 */
+.pic .pic1,
+.pic .pic2,
+.pic .pic3 {
+  white-space: nowrap;
+}
+.pic .pic1 div,
+.pic .pic2 div,
+.pic .pic3 div {
+  width: 33%;
+  height: 250px;
+  object-fit: contain;
+  display:inline-block;
+  margin-top: 10px;
+  margin-left:10px;
+  overflow: hidden;
+  /* background-color: red; */
+}
+.pic .pic2 
+{
+  margin-left: -150px;
+}
+/* 图片 */
+.feelcontents img {
+  width:100%;
+}
+
+/* LOVE部分 */
+.lovecontents {
+  width: 100%;
+  height: 750px;
+  z-index: 100;
+  position: relative;
+  /* overflow:hidden; */
+  background-color: #fff0e1;
+  /* background:linear-gradient(to bottom,#ecefee,black); */
+}
+
+/* LOVE 部分主标题 */
+.lovecontents .loveChitext {
+  font-size: 70px;
+  color:#107e65;
+  font-weight:700;
+  position: absolute;
+  top: 30%;
+  left:17%;
+}
+/* LOVE 部分副标题 */
+.lovecontents .loveEngtext {
+  font-size: 50px;
+  position: absolute;
+  font-weight: 700;
+  top:43%;
+  left:18%;
+  transform:translate(-2%,0);
+  color:black;
+}
+.lovecontents .pl {
+  width: 500px;
+  position:absolute;
+  right:0px;
+  z-index: 100;
+  top:264px;
+}
+.lovecontents .tree {
+  width: 400px;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.lovecontents .stone {
+  width:500px;
+  position: absolute;
+  left:-2%;
+  bottom:-5px;
+}
+/* 诗辞 */
+.lovecontents .list {
+  color: #80807c;
+  font-size:20px;
+  top:50%;
+  left:55%;
+  transform:translate(-50%,-50%);
+  position:absolute;
+  line-height: 60px;
+  z-index: 150;
+  text-align: center;
+}
+
+/* ABOUT 部分 */
+.aboutcontents {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  z-index:99;
+  background-color: #042129;
+}
+
+.aboutcontents .aboutlist {
+  width:80%;
+  height:250px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  /* background-color: #fff; */
+  transform:translate(-50%,-50%);
+}
+.aboutcontents ul {
+  position:absolute;
+  text-align: center;
+  top:50%;
+  z-index: 1000;
+  transform:translate(0,-50%);
+}
+.aboutcontents ul:nth-child(1)
+{
+  left:0;
+}
+.aboutcontents ul:nth-child(2)
+{
+  left:25%;
+}
+.aboutcontents ul:nth-child(3)
+{
+  left:50%;
+}
+.aboutcontents ul:nth-child(4)
+{
+  left:75%;
+}
+.aboutcontents ul:nth-child(5)
+{
+  right:0;
+}
+
+.aboutcontents ul li {
+  margin-top: 20px;
+}
+.aboutcontents ul li a {
+  color: #ecefee;
+  text-decoration: none
+}
+.aboutcontents ul li a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- css文件引入 -->
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- 字体图标css文件引入 -->
+  <link rel="stylesheet" href="./iconfont/iconfont.css">
+</head>
+<body>
+  <!-- 顶部导航栏 -->
+  <div class="header">
+    <img src="./images/henu.png" class="henu">
+    <ul>
+      <li><p class="HOME">Home</p></li>
+      <li><p class="KNOW">Know</p></li>
+      <li><p class="FEEL">Feel</p></li>
+      <li><p class="LOVE">Love</p></li>
+      <li class="bt"><p class="btword">Pslay</p></li>
+    </ul>
+    <!-- 播放按钮 -->
+    <img src="./images/播放.png" class="turn">
+    <audio id="song" loop>
+      <source src="./images/bgm.mp3" type="audio/mp3">
+    </audio>
+  </div>
+  <!-- HOME -->
+  <div class="headimg">
+    <!-- 背景视频 -->
+    <video src="./images/ingame.mp4" autoplay loop muted class="vid"></video>
+    <!-- 标题 -->
+    <h1>'心醉自然'</h1>
+    <h2>——— 薛振曼结课作业 ———</h2>
+    <div class="iconfont icon-jiantouxia" id="lower"></div>
+  </div>
+
+  <!-- KNOW -->
+  <div class="knowcontents">
+    <p class="knowChitext">'认识自然'</p>
+    <p class="knowEngtext">Get to Know Nature</p>
+    <div class="climate">
+      <img src="./images/热带气候.jpg" class="one">
+      <img src="./images/干旱气候.jpg" class="two">
+      <img src="./images/寒带气候.jpg" class="three">
+      <img src="./images/极地气候.jpg" class="other1">
+      <img src="./images/温带气候.jpg" class="other2">
+    </div>
+    <div class="leftpart">
+      <p class="introduce"><strong class="littletitle">热带气候</strong><br><strong>全年高温</strong>：平均气温通常在25-30°C以上，比如亚马逊雨林的平均气温常年保持在27°C左右。<br><strong>降水量大</strong>：年降水量通常超过2000毫米，像巴西的马瑙斯，年降水量就有2300毫米。这里的雨像是天上的喷水器，一年四季不间断。<br><strong>生物多样性极高</strong>：热带雨林覆盖地球表面的6%，却拥有世界一半以上的物种。你可能在一平方公里的雨林里发现超过400种树木。<br></p>
+    </div>
+    <div class="middle">
+      <p class="introduce"><strong class="littletitle">干旱气候</strong><br><strong>极端干旱</strong>：年降水量少于250毫米，有些地方如撒哈拉沙漠年降水量不足25毫米。下雨是如此罕见，当地人甚至会把第一次看雨的日子记下来。<br><strong>昼夜温差大</strong>：白天温度可以达到40°C以上，而夜晚则可能降到0°C以下。在撒哈拉沙漠，你可能会在一天内经历夏天和冬天。<br><strong>适应性强的生物</strong>：仙人掌能储存大量水分，而沙漠狐的耳朵可以帮助散热。<br></p>
+    </div>
+    <div class="rightpart">
+      <p class="introduce"><strong class="littletitle">寒带气候</strong><br><strong>极端寒冷</strong>：冬季漫长且严寒，夏季短暂而凉爽。比如加拿大的黄刀镇，冬季气温可以低至-30°C，夏季约15°C。<br><strong>降水少，多为雪</strong>：年降水量少，但大部分是雪。格陵兰岛的部分地区年降水量约为500毫米，几乎全是雪。<br><strong>独特的生态系统</strong>：寒带地区有许多适应寒冷的动植物，如北极熊和苔藓。<br></p>
+    </div>
+    <div class="hidden">
+      <p class="introduce"><strong class="littletitle">极地气候</strong><br><strong>全年极端寒冷</strong>：温度几乎一直在冰点以下，比如南极洲，冬季气温可达-60°C。<br><strong>极昼极夜现象</strong>：夏季有连续几个月的白天（极昼），冬季有连续几个月的黑夜（极夜）。在挪威的斯瓦尔巴群岛，你可以体验到这种奇妙的自然现象。<br><strong>冰雪覆盖</strong>：大部分地面被冰雪覆盖，无植物生长。比如格陵兰岛的冰盖厚度可达3000米。<br></p>
+    </div>
+    <div class="hidden">
+      <p class="introduce"><strong class="littletitle">温带气候</strong><br><strong>四季分明</strong>：春夏秋冬，每个季节都有明显的特点。例如纽约，冬天雪花飘飘，夏天阳光灿烂。<br><strong>温度适中</strong>：夏季温暖，冬季寒冷，但极端温度不多见。比如伦敦，夏天平均气温大约20°C，冬天约5°C。<br><strong>多样的植被</strong>：温带地区植被多样，从落叶阔叶林到针叶林，都能找到。<br></p>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- FEEL -->
+  <div class="feelcontents">
+    <p class="feelChitext">'感受自然'</p>
+    <p class="feelEngtext">Feeling Nature</p>
+    <span class="data">
+      <p class="datatitle">在英格兰谢菲尔德的森林中...</p>
+      <p>鸟类鸣叫频率为40-50次/分钟</p>
+      <p>树木平均密度为500-1000棵/公顷</p>
+      <p>土壤小动物平均密度达上万只/平方米</p>
+    </span>
+    <p class="short">倾听风吟，看云卷云舒，心随自然共舞</p>
+    <div class="pic">
+      <div class="pic1">
+        <div><img src="./images/风景01.png"></div>
+        <div><img src="./images/风景02.png"></div>
+        <div><img src="./images/风景03.png"></div>
+      </div>
+      <div class="pic2">
+        <div><img src="./images/风景04.png"></div>
+        <div><img src="./images/风景05.png"></div>
+        <div><img src="./images/风景06.png"></div>
+        <div><img src="./images/风景07.png"></div>
+      </div>
+      <div class="pic3">
+        <div><img src="./images/风景08.png"></div>
+        <div><img src="./images/风景09.png"></div>
+        <div><img src="./images/风景10.png"></div>
+      </div>
+    </div>
+</div>
+
+  <!-- LOVE -->
+  <div class="lovecontents">
+    <p class="loveChitext">'热爱自然'</p>
+    <p class="loveEngtext">Love Nature</p>
+    <img src="./images/盆栽.png" class="pl">
+    <img src="./images/树梢.png" class="tree">
+    <img src="./images/石头.png" class="stone">
+    <div class="list">
+      <p>踏入茂密的森林&nbsp;树木参天&nbsp;鸟语花香<br>阳光透过树叶的缝隙洒下斑斓的光辉<br>我感受到大自然的生机勃勃<br>一切都是那样的神秘而奇妙<br>我是大自然的孩子&nbsp;与她共同舞动<br>在这片绿色的海洋里&nbsp;我找到了永恒的宁静与安宁</p>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+   <div class="aboutcontents">
+    <div class="aboutlist">
+      <ul>
+        <li><a href="#">关于</a></li>
+        <li><a href="#">新闻</a></li>
+        <li><a href="#">主机</a></li>
+        <li><a href="#">隐私</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">展示</a></li>
+        <li><a href="#">主题</a></li>
+        <li><a href="#">插件</a></li>
+        <li><a href="#">样式</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">做的</a></li>
+        <li><a href="#">累死</a></li>
+        <li><a href="#">我了</a></li>
+        <li><a href="#">还要</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">想这些</a></li>
+        <li><a href="#">名字</a></li>
+        <li><a href="#">想不</a></li>
+        <li><a href="#">出来啊</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">终于</a></li>
+        <li><a href="#">做完</a></li>
+        <li><a href="#">了啊</a></li>
+        <li><a href="#">完美</a></li>
+      </ul>
+    </div>
+   </div>
+</body>
+<!-- js 文件引入 -->
+<script src="./js/index.js"></script>
+</html>
