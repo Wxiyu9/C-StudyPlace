@@ -1,10 +1,10 @@
 ﻿  computer.c
-D:\VS\code\traing\MiniComputer\MiniComputer\computer.c(371,11): warning C4098: “StuGradUpper”:“void”函数返回值
-D:\VS\code\traing\MiniComputer\MiniComputer\computer.c(522,11): warning C4047: “函数”:“int *”与“int [3][4]”的间接级别不同
-D:\VS\code\traing\MiniComputer\MiniComputer\computer.c(522,11): warning C4024: “MatTra”: 形参和实参 1 的类型不同
-D:\VS\code\traing\MiniComputer\MiniComputer\computer.c(522,17): warning C4047: “函数”:“int *”与“int [4][3]”的间接级别不同
-D:\VS\code\traing\MiniComputer\MiniComputer\computer.c(522,17): warning C4024: “MatTra”: 形参和实参 2 的类型不同
-D:\VS\code\traing\MiniComputer\MiniComputer\computer.c(534,50): warning C4047: “函数”:“int *”与“int [3][3]”的间接级别不同
-D:\VS\code\traing\MiniComputer\MiniComputer\computer.c(534,50): warning C4024: “DiaNum”: 形参和实参 1 的类型不同
-D:\VS\code\traing\MiniComputer\MiniComputer\computer.c(540,4): warning C4013: “gets”未定义；假设外部返回 int
+D:\VS\code\traing\MiniComputer\MiniComputer\computer.c(372,11): warning C4098: “StuGradUpper”:“void”函数返回值
+D:\VS\code\traing\MiniComputer\MiniComputer\computer.c(523,11): warning C4047: “函数”:“int *”与“int [3][4]”的间接级别不同
+D:\VS\code\traing\MiniComputer\MiniComputer\computer.c(523,11): warning C4024: “MatTra”: 形参和实参 1 的类型不同
+D:\VS\code\traing\MiniComputer\MiniComputer\computer.c(523,17): warning C4047: “函数”:“int *”与“int [4][3]”的间接级别不同
+D:\VS\code\traing\MiniComputer\MiniComputer\computer.c(523,17): warning C4024: “MatTra”: 形参和实参 2 的类型不同
+D:\VS\code\traing\MiniComputer\MiniComputer\computer.c(535,50): warning C4047: “函数”:“int *”与“int [3][3]”的间接级别不同
+D:\VS\code\traing\MiniComputer\MiniComputer\computer.c(535,50): warning C4024: “DiaNum”: 形参和实参 1 的类型不同
+D:\VS\code\traing\MiniComputer\MiniComputer\computer.c(541,4): warning C4013: “gets”未定义；假设外部返回 int
   MiniComputer.vcxproj -> D:\VS\code\traing\MiniComputer\x64\Debug\MiniComputer.exe

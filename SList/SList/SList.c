@@ -187,7 +187,6 @@ int main()
 	int n = 0;
 	int b = 0;
 	do {
-		system("cls");
 		emnu();
 		printf("请选择：");
 		scanf("%d", &input);
@@ -251,7 +250,6 @@ int main()
 			printf("输入错误，请重新输入\n");
 			break;
 		}
-		system("pause");
 	} while (input);
 	return 0;
 }

@@ -78,3 +78,73 @@
 //	}
 //	return 0;
 //}
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//
+//// 定义链表节点结构
+//typedef struct Node {
+//    int data;
+//    struct Node* next;
+//} Node;
+//
+//// 创建新节点
+//Node* createNode(int data) {
+//    Node* newNode = (Node*)malloc(sizeof(Node));
+//    if (!newNode) {
+//        printf("内存分配失败\n");
+//        exit(1);
+//    }
+//    newNode->data = data;
+//    newNode->next = NULL;
+//    return newNode;
+//}
+//
+//// 插入新节点到链表
+//Node* insertNode(Node* head, int data) {
+//    Node* newNode = createNode(data);
+//    if (head == NULL) {
+//        head = newNode;
+//    }
+//    else {
+//        Node* temp = head;
+//        while (temp->next != NULL) {
+//            temp = temp->next;
+//        }
+//        temp->next = newNode;
+//    }
+//    return head;
+//}
+//
+//// 输出链表
+//void printList(Node* head) {
+//    Node* temp = head;
+//    while (temp != NULL) {
+//        printf("%d -> ", temp->data);
+//        temp = temp->next;
+//    }
+//    printf("NULL\n");
+//}
+//
+//int main() {
+//    Node* head = NULL; // 初始化链表头指针
+//
+//    // 插入节点
+//    insertNode(head, 1);
+//    insertNode(head, 2);
+//    insertNode(head, 3);
+//    insertNode(head, 4);
+//
+//    // 输出链表
+//    printList(head);
+//
+//    // 释放内存
+//    Node* temp;
+//    while (head != NULL) {
+//        temp = head;
+//        head = head->next;
+//        free(temp);
+//    }
+//
+//    return 0;
+//}

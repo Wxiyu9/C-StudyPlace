@@ -338,6 +338,7 @@ void StuInformation()
 		scanf("%s", inf[i].name);
 		printf("请输入学生%d的成绩：", i + 1);
 		scanf("%d", &inf[i].grade);
+		printf("\n");
 	}
 	for (int i = 0; i < sz - 1; i++)
 	{
