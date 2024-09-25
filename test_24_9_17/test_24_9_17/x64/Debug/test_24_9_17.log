@@ -1,0 +1,3 @@
+﻿  test.c
+D:\VS\code\traing\test_24_9_17\test_24_9_17\test.c(107,39): warning C4101: “j”: 未引用的局部变量
+  test_24_9_17.vcxproj -> D:\VS\code\traing\test_24_9_17\x64\Debug\test_24_9_17.exe

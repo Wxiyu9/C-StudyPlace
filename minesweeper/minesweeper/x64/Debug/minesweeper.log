@@ -1,0 +1,7 @@
+﻿  game.c
+D:\VS\code\traing\minesweeper\minesweeper\game.c(17,19): warning C4028: 形参 1 与声明不同
+  test.c
+D:\VS\code\traing\minesweeper\minesweeper\test.c(19,10): warning C4048: “char (*)[9]”和“char [11][11]”数组的下标不同
+D:\VS\code\traing\minesweeper\minesweeper\test.c(22,2): warning C4013: “FineMine”未定义；假设外部返回 int
+  正在生成代码...
+  minesweeper.vcxproj -> D:\VS\code\traing\minesweeper\x64\Debug\minesweeper.exe

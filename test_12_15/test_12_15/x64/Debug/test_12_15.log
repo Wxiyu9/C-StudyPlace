@@ -1,0 +1,3 @@
+﻿  源.cpp
+D:\VS\code\traing\test_12_15\test_12_15\源.cpp(5,12): warning C4101: “max”: 未引用的局部变量
+D:\VS\code\traing\test_12_15\test_12_15\源.cpp(16): error C4700: 使用了未初始化的局部变量“i”
