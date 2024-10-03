@@ -27,3 +27,21 @@ void rotate(int* nums, int numsSize, int k) {
         *(nums + i) = temp;
     }
 }
+
+
+//ÏûÊ§µÄÊı×Ö
+int missingNumber(int* nums, int numsSize) {
+    int* result = (int*)calloc(sizeof(int) * (numsSize + 1), sizeof(int));
+    int* cur = nums;
+    for (int i = 0; i < numsSize; i++)
+    {
+        *(result + *cur) = *cur;
+        cur++;
+    }
+    for (int i = 1; i < numsSize + 1; i++)
+    {
+        if (*(result + i) == 0)
+            return i;
+    }
+    return 0;
+}
